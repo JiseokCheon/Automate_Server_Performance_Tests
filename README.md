@@ -25,3 +25,8 @@ id : admin / pw : admin
 docker pull --platform linux/amd64 ngrinder/controller
 
 docker run -d -v ~/ngrinder-controller:/opt/ngrinder-controller --name controller -p 80:80 -p 16001:16001 -p 12000-12009:12000-12009 ngrinder/controller
+
+
+docker pull --platform linux/amd64 ngrinder/agent
+
+docker run -d -v ~/ngrinder-agent:/opt/ngrinder-agent --name agent ngrinder/agent localhost:80
