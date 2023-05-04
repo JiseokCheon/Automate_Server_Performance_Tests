@@ -10,3 +10,8 @@
 http://localhost:7070
 
 id : admin / pw : admin
+
+
+agent 설치 후 
+
+압축 해제 : tar -xvf ngrinder-agent-3.5.8-localhost.tar
