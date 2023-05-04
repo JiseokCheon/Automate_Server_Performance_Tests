@@ -12,6 +12,16 @@ http://localhost:7070
 id : admin / pw : admin
 
 
-agent 설치 후 
+#### agent 설치
 
 압축 해제 : tar -xvf ngrinder-agent-3.5.8-localhost.tar
+
+실행 : ./run_agent.sh
+
+
+
+## docker
+
+docker pull --platform linux/amd64 ngrinder/controller
+
+docker run -d -v ~/ngrinder-controller:/opt/ngrinder-controller --name controller -p 80:80 -p 16001:16001 -p 12000-12009:12000-12009 ngrinder/controller
